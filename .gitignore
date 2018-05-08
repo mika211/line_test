@@ -27,3 +27,4 @@
 /.nb-gradle/
 
 application.yml
+.DS_Store
