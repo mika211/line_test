@@ -1,24 +1,4 @@
 steps:
-- name: 'cd'
-  args:
-  - '../private/app'
--name: 'git'
-  args:
-  - 'fetch'
-  - 'origin'
-  - 'master'
--name: 'git'
-  args:
-  - 'reset'
-  - '--hard'
-  - 'origin/master'
-- name: 'cp'
-  args:
-  - '../application.yaml'
-  - 'src/main/resources/application.yaml'
 - name: 'gradle'
   args:
   - appengineDeploy
-- name: 'rm'
-  args:
-  - 'src/main/resources/application.yaml'
