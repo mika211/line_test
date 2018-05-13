@@ -6,6 +6,6 @@ CMD echo "now running..."
 
 # CMD ./gradlew appengineDeploy
 
-CMD pwd | echo
+CMD echo `pwd`
 
-CMD ls -la | echo
+CMD echo `ls -la`
