@@ -1,11 +1,5 @@
 FROM google/cloud-sdk:alpine
-
-RUN echo "now building..."
-
-CMD echo "now running..."
-
-# CMD ./gradlew appengineDeploy
-
-CMD echo `pwd`
-
-CMD echo `ls -la`
+RUN apk update
+    apk add openjdk8
+    gcloud config set project $PROJECT_ID
+CMD ./gradlew appengineDeploy
