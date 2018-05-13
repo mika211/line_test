@@ -4,13 +4,13 @@ steps:
   args:
   - -c
   - |
-    echo `gcloud config list`
+    echo `ls -la`
 - name: gcr.io/cloud-builders/gcloud
   args:
   - components
   - install
   - app-engine-java
-- name: gcr.io/cloud-builders/gradle
+- name: gcr.io/cloud-builders/javac
   entrypoint: bash
   args:
   - -c
