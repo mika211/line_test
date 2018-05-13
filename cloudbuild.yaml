@@ -4,7 +4,7 @@ steps:
   - components
   - install
   - app-engine-java
-- name: gcr.io/cloud-builders/gcloud
+- name: gcr.io/cloud-builders/gradle
   entrypoint: bash
   args:
   - -c
