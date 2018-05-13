@@ -5,14 +5,8 @@ steps:
   args:
   - -c
   - |
-    echo `ls -la`
-- name: gcr.io/cloud-builders/gcloud
-  entrypoint: bash
-  args:
-  - -c
-  - |
     gcloud components install app-engine-java
-- name: gcr.io/cloud-builders/gcloud
+- name: gcr.io/cloud-builders/javac
   entrypoint: bash
   args:
   - -c
