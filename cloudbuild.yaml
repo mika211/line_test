@@ -13,7 +13,8 @@ steps:
   args:
   - -c
   - |
-    echo `ls -la`
+    echo `pwd`
+
 
 
 #- name: gcr.io/cloud-builders/javac
