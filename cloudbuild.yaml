@@ -1,5 +1,5 @@
 steps:
-- name: gcr.io/cloud-builders/glide
+- name: gcr.io/cloud-builders/gradle
   entrypoint: bash
   args:
   - -c
