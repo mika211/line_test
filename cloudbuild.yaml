@@ -1,7 +1,6 @@
 steps:
-- name: 'gradle'
+- name: gcr.io/cloud-builders/glide
   args:
-  - 'appengineStage'
-- name: 'gradle'
-  args:
-  - 'appengineDeploy'
+  - -c
+  - |
+    ./gradlew appengineDeploy
