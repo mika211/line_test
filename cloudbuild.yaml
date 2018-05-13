@@ -7,7 +7,7 @@ steps:
 #  - |
 #    gcloud components install app-engine-java
 
-
+- name: gcr.io/cloud-builders/javac
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: bash
   args:
