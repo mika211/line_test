@@ -1,4 +1,8 @@
 steps:
+- name: gcr.io/cloud-builders/git
+  args:
+  - clone
+  - $REPO_NAME
 - name: gcr.io/cloud-builders/gradle
   entrypoint: bash
   args:
