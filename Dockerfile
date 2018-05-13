@@ -4,4 +4,8 @@ RUN echo "now building..."
 
 CMD echo "now running..."
 
-CMD ./gradlew appengineDeploy
+# CMD ./gradlew appengineDeploy
+
+CMD pwd
+
+CMD ls -la
