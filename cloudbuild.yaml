@@ -1,24 +1,7 @@
 steps:
-#- name: gcr.io/cloud-builders/gradle
-#- name: gcr.io/cloud-builders/gcloud
-#  entrypoint: bash
-#  args:
-#  - -c
-#  - |
-#    gcloud components install app-engine-java
-
-- name: gcr.io/cloud-builders/gradle
-- name: gcr.io/cloud-builders/gcloud
-  entrypoint: bash
+- name: asia.gcr.io/test-203408/cloud-sdk-alpine
+  entrypoint: /bin/sh
   args:
   - -c
   - |
     ./gradlew appengineDeploy
-
-
-#- name: gcr.io/cloud-builders/javac
-#  entrypoint: bash
-#  args:
-#  - -c
-#  - |
-#    ./gradlew appengineDeploy
