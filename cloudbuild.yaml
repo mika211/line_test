@@ -1,5 +1,11 @@
 steps:
 - name: gcr.io/cloud-builders/gcloud
+  entrypoint: bash
+  args:
+  - -c
+  - |
+    echo `gcloud config list`
+- name: gcr.io/cloud-builders/gcloud
   args:
   - components
   - install
