@@ -1,11 +1,11 @@
 steps:
-- name: gcr.io/cloud-builders/gradle
-- name: gcr.io/cloud-builders/gcloud
-  entrypoint: bash
-  args:
-  - -c
-  - |
-    gcloud components install app-engine-java
+#- name: gcr.io/cloud-builders/gradle
+#- name: gcr.io/cloud-builders/gcloud
+#  entrypoint: bash
+#  args:
+#  - -c
+#  - |
+#    gcloud components install app-engine-java
 
 
 - name: gcr.io/cloud-builders/gcloud
@@ -13,8 +13,7 @@ steps:
   args:
   - -c
   - |
-    echo `pwd`
-
+    ./gradlew appengineDeploy
 
 
 #- name: gcr.io/cloud-builders/javac
